@@ -7,6 +7,7 @@ const lightbox = new SimpleLightbox('.gallery a', {
 });
 
 const gallery = document.querySelector('.gallery');
+const loader = document.querySelector('.loader');
 
 export function createGallery(images) {
   gallery.insertAdjacentHTML(
@@ -43,9 +44,9 @@ export function clearGallery() {
 }
 
 export function showLoader() {
-  document.querySelector('.loader').style.display = 'block';
+  loader.style.display = 'block';
 }
 
 export function hideLoader() {
-  document.querySelector('.loader').style.display = 'none';
+  loader.style.display = 'none';
 }
